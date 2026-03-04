@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Exam</title>
+</head>
+<body>
+    <h1>Me when I register a form: </h1>
+    <form id="Registration">
+        
+        <!-- full name -->
+        <p>
+            <label for="fullName" >Full Name</label> <br> 
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name ...">
+        </p>
+
+        <!-- date of birth -->
+        <p>
+            <label for="birthday">Date of Birth</label>
+            <input type="date" id="birthDate" name="birthday">
+        </p>
+
+        <!-- gender -->
+        <p>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="M"> Male <br>
+            <input type="radio" name="gender" value="F"> Female <br>
+        </p>
+
+        <!-- religion -->
+        <p>
+            <label for="religion">Religion</label>
+            <select id="religion" name="religion" requied>
+                <option value="" disabled selected hidden>...</option>
+                <option value="Muslim">Islam</option>
+                <option value="Protestant">Protestantism</option>
+                <option value="Catholic">Catholicism</option>
+                <option value="Hindu">Hinduism</option>                
+                <option value="Buddhist">Buddhism</option>                
+                <option value="Confucianist">Confucianism</option>
+            </select>
+        </p>
+
+        <!-- how they got information about Telkom -->
+        <p>
+            <label for="info">How did you get info about SMK Telkom Malang?</label>
+            <input type="checkbox" class="info" value="brochure"> Brochure <br>
+            <input type="checkbox" class="info" value="newspaper"> Newspaper <br>
+            <input type="checkbox" class="info" value="Banner"> Banner <br>
+            <input type="checkbox" class="info" value="Website"> Website <br>
+            <input type="checkbox" class="info" value="Friend"> Friend <br>
+        </p>
+
+        <p>
+            <button type="submit">Submit!</button>
+            <button type="reset">Nevermind .. </button>
+        </p>
+
+    </form>
+    
+    <p id="feedback"></p>
+    <script src="exam.js"></script>
+</body>
+</html>
